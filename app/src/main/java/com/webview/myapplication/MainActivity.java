@@ -185,6 +185,7 @@ public class MainActivity extends Activity {
         webSettings.setPluginState(PluginState.ON);
         webSettings.setAllowFileAccess(false);
         webSettings.setUserAgentString("Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36");
+        WebView.setWebContentsDebuggingEnabled(true);
         if (BLOCK_MEDIA) {
             webSettings.setLoadsImagesAutomatically(false);
         }
